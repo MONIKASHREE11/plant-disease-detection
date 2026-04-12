@@ -1,0 +1,32 @@
+# Model weights (too large for GitHub — share via Google Drive / HuggingFace)
+*.pth
+*.pt
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Data folder (dataset not included in repo)
+data/
+
+# Generated outputs
+*.png
+training_curves.png
+efficientnet_training_curves.png
+confusion_matrix.png
+efficientnet_confusion_matrix.png
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Virtual environment
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
