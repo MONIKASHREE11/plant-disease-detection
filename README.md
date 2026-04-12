@@ -76,7 +76,7 @@ ollama pull tinyllama
 ```
 
 ### 4. Download the trained model weights
-Download `weed_crop_model.pth` from [Google Drive link here] and place it in the root folder.
+Download `weed_crop_model.pth` from https://drive.google.com/file/d/1-Ol4y9PUMjo8enQ3M4_R5RVnt8MguS43/view?usp=drive_link and place it in the root folder.
 
 ### 5. Run the app
 ```bash
