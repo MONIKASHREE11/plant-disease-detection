@@ -129,7 +129,7 @@ for epoch in range(NUM_EPOCHS):
     if val_acc > best_val_acc:
         best_val_acc = val_acc
         torch.save(model.state_dict(), SAVE_PATH)
-        print(f"  ✅ Saved best model (val acc: {val_acc:.2f}%)")
+        print(f" Saved best model (val acc: {val_acc:.2f}%)")
 
 print(f"\nTraining complete. Best val accuracy: {best_val_acc:.2f}%")
 
