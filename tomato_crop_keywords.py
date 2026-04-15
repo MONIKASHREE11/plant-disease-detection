@@ -53,24 +53,24 @@ def generate_qa_dataset():
     qa_list = []
     for i in range(1, NUM_QA + 1):
         prompt = generate_prompt(i)
-        print(f"🌱 Generating Q&A {i}/{NUM_QA} with keyword: {KEYWORDS[i-1]}")
+        print(f" Generating Q&A {i}/{NUM_QA} with keyword: {KEYWORDS[i-1]}")
         try:
             result = call_ollama(prompt)
             qa_list.append({"id": i, "keyword": KEYWORDS[i - 1], "qa": result.strip()})
             time.sleep(1)  # Optional: delay to avoid overloading the local API
         except Exception as e:
-            print(f"❌ Error on Q&A {i} ({KEYWORDS[i-1]}): {e}")
+            print(f"Error on Q&A {i} ({KEYWORDS[i-1]}): {e}")
     return qa_list
 
 # Save the result to a JSON file
 def save_to_file(data):
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
-    print(f"\n✅ Saved {len(data)} Q&A pairs to '{OUTPUT_FILE}'")
+    print(f"\n Saved {len(data)} Q&A pairs to '{OUTPUT_FILE}'")
 
 # Main execution
 if __name__ == "__main__":
-    print("🌾 Starting Q&A generation for crop disease classification (Natural Solutions)...")
+    print(" Starting Q&A generation for crop disease classification (Natural Solutions)...")
     dataset = generate_qa_dataset()
     save_to_file(dataset)
 
