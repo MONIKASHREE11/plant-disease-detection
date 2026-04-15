@@ -113,7 +113,7 @@ for epoch in range(NUM_EPOCHS):
     if val_acc > best_val_acc:
         best_val_acc = val_acc
         torch.save(model.state_dict(), SAVE_PATH)
-        print("  ✅ Saved best model.")
+        print("Saved best model.")
 
 # ── Plot ──────────────────────────────────────────────────────
 plt.figure(figsize=(12, 5))
