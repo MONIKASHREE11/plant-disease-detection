@@ -126,7 +126,7 @@ if uploaded_file is not None:
         st.write(advice)
 
     # ── Multilingual Tabs ─────────────────────────────────────
-    st.markdown("### 🌐 Multilingual Advice")
+    st.markdown("### Multilingual Advice")
     st.write("Read and listen to the expert advice in your preferred language.")
 
     tabs = st.tabs(list(LANGUAGES.keys()))
